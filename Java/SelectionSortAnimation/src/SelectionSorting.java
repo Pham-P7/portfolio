@@ -61,16 +61,13 @@ public class SelectionSorting{
         marked = minIndex;
         try {
             wait();
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-        int temp = this.data[current];
-        this.data[current] = this.data[minIndex];
-        this.data[minIndex] = temp;
-        sorted++;
-        try {
+            int temp = this.data[current];
+            this.data[current] = this.data[minIndex];
+            this.data[minIndex] = temp;
+            sorted++;
             wait();
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
         marked = current;
