@@ -1,1 +1,1 @@
-## graphic representation of a selection sort algorithm using a multi-thread structure
+# graphic representation of a selection sort algorithm using a multi-thread structure
